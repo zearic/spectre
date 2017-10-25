@@ -36,7 +36,7 @@
 .show-md,
 .show-lg,
 .show-xl {
-  display: none !important;
+  display: none ;
 }
 
 // Responsive grid system
@@ -184,10 +184,10 @@
     width: 8.33333333%;
   }
   .hide-xl {
-    display: none !important;
+    display: none ;
   }
   .show-xl {
-    display: block !important;
+    display: block ;
   }
 }
 @media (max-width: $size-lg) {
@@ -242,10 +242,10 @@
     width: 8.33333333%;
   }
   .hide-lg {
-    display: none !important;
+    display: none ;
   }
   .show-lg {
-    display: block !important;
+    display: block ;
   }
 }
 @media (max-width: $size-md) {
@@ -300,10 +300,10 @@
     width: 8.33333333%;
   }
   .hide-md {
-    display: none !important;
+    display: none ;
   }
   .show-md {
-    display: block !important;
+    display: block ;
   }
 }
 @media (max-width: $size-sm) {
@@ -358,10 +358,10 @@
     width: 8.33333333%;
   }
   .hide-sm {
-    display: none !important;
+    display: none ;
   }
   .show-sm {
-    display: block !important;
+    display: block ;
   }
 }
 @media (max-width: $size-xs) {
@@ -416,9 +416,9 @@
     width: 8.33333333%;
   }
   .hide-xs {
-    display: none !important;
+    display: none ;
   }
   .show-xs {
-    display: block !important;
+    display: block ;
   }
 }
