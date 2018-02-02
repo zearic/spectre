@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/docs.css">
 </head>
 <body>
-  <div class="docs-container off-canvas">
+  <div class="docs-container off-canvas off-canvas-sidebar-show">
     <div class="docs-navbar">
       <a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar">
         <i class="icon icon-menu"></i>
@@ -25,7 +25,7 @@
       <div class="docs-brand">
         <a href="index.html" class="docs-logo">
           <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework">
-          <h2>Spectre.css</h2>
+          <h2>SPECTRE</h2>
         </a>
       </div>
       <div class="docs-nav">
@@ -38,7 +38,7 @@
             <div class="accordion-body">
               <ul class="menu menu-nav">
                 <li class="menu-item">
-                  <a href="getting-started.html#introduction">Introduction</a>
+                  <a href="getting-started.html">Introduction</a>
                 </li>
                 <li class="menu-item">
                   <a href="getting-started.html#installation">Installation</a>
@@ -63,7 +63,7 @@
             <div class="accordion-body">
               <ul class="menu menu-nav">
                 <li class="menu-item">
-                  <a href="elements.html#typography">Typography</a>
+                  <a href="elements.html">Typography</a>
                 </li>
                 <li class="menu-item">
                   <a href="elements.html#tables">Tables</a>
@@ -97,7 +97,7 @@
             <div class="accordion-body">
               <ul class="menu menu-nav">
                 <li class="menu-item">
-                  <a href="layout.html#grid">Flexbox grid</a>
+                  <a href="layout.html">Flexbox grid</a>
                 </li>
                 <li class="menu-item">
                   <a href="layout.html#responsive">Responsive</a>
@@ -116,7 +116,7 @@
             <div class="accordion-body">
               <ul class="menu menu-nav">
                 <li class="menu-item">
-                  <a href="components.html#accordions">Accordions</a>
+                  <a href="components.html">Accordions</a>
                 </li>
                 <li class="menu-item">
                   <a href="components.html#autocomplete">Autocomplete</a>
@@ -186,7 +186,7 @@
             <div class="accordion-body">
               <ul class="menu menu-nav">
                 <li class="menu-item">
-                  <a href="utilities.html#colors">Colors</a>
+                  <a href="utilities.html">Colors</a>
                 </li>
                 <li class="menu-item">
                   <a href="utilities.html#cursors">Cursors</a>
@@ -220,7 +220,7 @@
             <div class="accordion-body">
               <ul class="menu menu-nav">
                 <li class="menu-item">
-                  <a href="experimentals.html#calendars">Calendars</a>
+                  <a href="experimentals.html">Calendars</a>
                 </li>
                 <li class="menu-item">
                   <a href="experimentals.html#carousels">Carousels</a>
@@ -263,7 +263,7 @@
         <h3 class="s-title"><a href="#introduction" class="anchor" aria-hidden="true">#</a>Introduction</h3>
         <div class="docs-note">
           <p><strong>Spectre.css</strong> is a lightweight, responsive and modern CSS framework for faster and extensible development.</p>
-          <p>Spectre provides basic styles for typography and elements, flexbox based responsive layout system, CSS components and utilities with best practice coding and consistent design language.</p>
+          <p>Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.</p>
         </div>
       </div>
 
@@ -302,7 +302,7 @@
           <p class="h5">Install manually</p>
           <p>Download the compiled and minified <a href="https://github.com/picturepan2/spectre/releases" target="_blank">Spectre CSS file</a> (core ~10KB min+gzip):</p>
           <p><a href="https://github.com/picturepan2/spectre/releases" target="_blank" class="btn btn-primary">Download Spectre.css</a></p>
-          <p>Include <code>spectre.css</code> located in <strong>/docs/dist</strong> in your website or Web app &lt;head&gt;. Also, you can add <code>spectre-icons.css</code> and <code>spectre-exp.css</code> accordingly.</p>
+          <p>Include <code>spectre.css</code> located in <strong>/dist</strong> in your website or Web app &lt;head&gt;. Also, you can add <code>spectre-icons.css</code> and <code>spectre-exp.css</code> accordingly.</p>
         </div>
 
 <!-- install manually -->
@@ -348,13 +348,27 @@
 
       </div>
 
+      <div class="container">
+        <div class="docs-ad docs-ad-sidebar">
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- github-vertical-sm -->
+          <ins class="adsbygoogle"
+              style="display:inline-block;width:120px;height:240px"
+              data-ad-client="ca-pub-2225124559530218"
+              data-ad-slot="5087273059"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+
       <div id="custom" class="container">
         <h3 class="s-title"><a href="#custom" class="anchor" aria-hidden="true">#</a>Custom version</h3>
         <div class="docs-note">
-          <p>You can customize your version of Spectre.css by editing SASS files in <code>/src</code> directory or removing unneeded components from <code>.scss</code> source files.</p>
-          <p><a href="https://github.com/picturepan2/spectre/" target="_blank" class="btn btn-primary">SASS Source Code</a></p>
-          <p>If you are looking for LESS version of Spectre.css, please switch to <code>LESS</code> branch.</p>
-          <p><a href="https://github.com/picturepan2/spectre/tree/less" target="_blank" class="btn">LESS Branch</a></p>
+          <p>You can customize your version of Spectre.css by editing Sass files in <code>/src</code> directory or removing unneeded components from <code>.scss</code> source files.</p>
+          <p><a href="https://github.com/picturepan2/spectre/" target="_blank" class="btn btn-primary">Sass Source Code</a></p>
+          <p>If you are looking for Less version of Spectre.css, please switch to <code>Less</code> branch.</p>
+          <p><a href="https://github.com/picturepan2/spectre/tree/less" target="_blank" class="btn">Less Branch</a></p>
         </div>
         <h4 id="compiling" class="s-subtitle">Compiling CSS</h4>
         <div class="docs-note">
@@ -363,23 +377,23 @@
           <ol>
             <li>Navigate to the root directory of Spectre.</li>
             <li>Run <code>npm install</code>. NPM will install all dev dependencies as listed in package.json.</li>
-            <li>When completed, run <code>gulp build</code> task to compile SASS to CSS and minify files.</li>
+            <li>When completed, run <code>gulp build</code> task to compile Sass to CSS and minify files.</li>
             <li>You can find compiled CSS files in <code>/dist</code> directory.</li>
           </ol>
           <p>All available Gulp tasks:</p>
           <ul>
-            <li><code>gulp build</code> - compile SASS to CSS and minify files (default)</li>
+            <li><code>gulp build</code> - compile Sass to CSS and minify files (default)</li>
             <li><code>gulp docs</code> - compile Docs related files</li>
             <li><code>gulp watch</code> - watch file changes and re-compile CSS files</li>
           </ul>
         </div>
-        <h4 id="importing" class="s-subtitle">Importing SASS</h4>
+        <h4 id="importing" class="s-subtitle">Importing Sass</h4>
         <div class="docs-note">
-          <p>It is recommended to custom Spectre by importing SASS source files to your projects. In this way, you can keep Spectre up to date without conflicts, since Spectre code and your custom code are separate.</p>
+          <p>It is recommended to custom Spectre by importing Sass source files to your projects. In this way, you can keep Spectre up to date without conflicts, since Spectre code and your custom code are separate.</p>
           <ul>
             <li>First, create your own project and install Spectre via <a href="#installation">NPM or other package managers</a>.</li>
             <li>Then create your <code>project-name.scss</code> file in the root folder. You can use <code>project-name.scss</code> to define your variables.</li>
-            <li>Compile the SASS file to CSS to get the custom version of Spectre.</li>
+            <li>Compile the Sass file to CSS to get the custom version of Spectre.</li>
           </ul>
 
 <!-- importing -->
@@ -409,7 +423,7 @@
 
 <!-- folder structure -->
 <pre class="code"><code>spectre/
-├── dist/                           <span class="com">// Build folder (Git ignored)</span>
+├── dist/                           <span class="com">// Build folder</span>
 │   ├── spectre-exp.css
 │   ├── spectre-exp.min.css
 │   ├── spectre-icons.css
@@ -435,7 +449,7 @@
 │   ├── index.html
 │   └── ...
 │
-├── src/                            <span class="com">// Source SASS files</span>
+├── src/                            <span class="com">// Source Sass files</span>
 │   ├── spectre.scss
 │   ├── spectre-icons.scss
 │   ├── spectre-exp.scss
@@ -605,6 +619,7 @@ gulp.task('prefix', function() {
             <li>Opera <small class="label label-success">LAST 4</small></li>
             <li>Internet Explorer 10+</li>
           </ul>
+          <p>Spectre supports Internet Explorer 10+, but some HTML5 and CSS3 features are not perfectly supported by Internet Explorer.</p>
         </div>
       </div>
 
@@ -620,7 +635,7 @@ gulp.task('prefix', function() {
           <p><strong>August 2017</strong></p>
           <ul>
             <li>
-              <a href="getting-started.html">Switch to SASS</a> <small class="label label-primary">NEW</small>
+              <a href="getting-started.html">Switch to Sass</a> <small class="label label-primary">NEW</small>
             </li>
             <li>
               <a href="getting-started.html">New Docs Experience</a> <small class="label label-primary">NEW</small>
@@ -688,7 +703,7 @@ gulp.task('prefix', function() {
 
       <footer class="docs-footer">
         <p><a href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a> | <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> | <a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a> | Version <span class="version"></span></p>
-        <p>Designed and built with ♥ by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
+        <p>Designed and built with <span class="text-error">♥</span> by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
       </footer>
 
     </div>

@@ -1,5 +1,5 @@
 // Off canvas menus
-$off-canvas-breakpoint: 960px !default;
+$off-canvas-breakpoint: $size-lg !default;
 
 .off-canvas {
   display: flex;
@@ -7,6 +7,15 @@ $off-canvas-breakpoint: 960px !default;
   height: 100%;
   position: relative;
   width: 100%;
+
+  .off-canvas-toggle {
+    display: block;
+    left: $layout-spacing;
+    position: absolute;
+    top: $layout-spacing;
+    transition: none;
+    z-index: $zindex-0;
+  }
 
   .off-canvas-sidebar {
     background: $bg-color;
@@ -53,32 +62,21 @@ $off-canvas-breakpoint: 960px !default;
       z-index: $zindex-2;
     }
   }
-
-  .off-canvas-toggle {
-    display: block;
-    left: $layout-spacing;
-    position: absolute;
-    top: $layout-spacing;
-    transition: none;
-    z-index: $zindex-0;
-  }
 }
 
 // Responsive layout
 @media (min-width: $off-canvas-breakpoint) {
   .off-canvas {
-    .off-canvas-sidebar {
-      flex: 0 0 auto;
-      position: relative;
-      transform: none;
-    }
-
-    .off-canvas-content {
-      padding-left: $layout-spacing-lg;
-    }
-
-    .off-canvas-toggle {
-      display: none;
+    &.off-canvas-sidebar-show {
+      .off-canvas-toggle {
+        display: none;
+      }
+  
+      .off-canvas-sidebar {
+        flex: 0 0 auto;
+        position: relative;
+        transform: none;
+      }
     }
   }
 }

@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/docs.css">
 </head>
 <body>
-  <div class="docs-container off-canvas">
+  <div class="docs-container off-canvas off-canvas-sidebar-show">
     <div class="docs-navbar">
       <a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar">
         <i class="icon icon-menu"></i>
@@ -25,7 +25,7 @@
       <div class="docs-brand">
         <a href="index.html" class="docs-logo">
           <img src="img/spectre-logo.svg" alt="Spectre.css CSS Framework">
-          <h2>Spectre.css</h2>
+          <h2>SPECTRE</h2>
         </a>
       </div>
       <div class="docs-nav">
@@ -38,7 +38,7 @@
             <div class="accordion-body">
               <ul class="menu menu-nav">
                 <li class="menu-item">
-                  <a href="getting-started.html#introduction">Introduction</a>
+                  <a href="getting-started.html">Introduction</a>
                 </li>
                 <li class="menu-item">
                   <a href="getting-started.html#installation">Installation</a>
@@ -63,7 +63,7 @@
             <div class="accordion-body">
               <ul class="menu menu-nav">
                 <li class="menu-item">
-                  <a href="elements.html#typography">Typography</a>
+                  <a href="elements.html">Typography</a>
                 </li>
                 <li class="menu-item">
                   <a href="elements.html#tables">Tables</a>
@@ -97,7 +97,7 @@
             <div class="accordion-body">
               <ul class="menu menu-nav">
                 <li class="menu-item">
-                  <a href="layout.html#grid">Flexbox grid</a>
+                  <a href="layout.html">Flexbox grid</a>
                 </li>
                 <li class="menu-item">
                   <a href="layout.html#responsive">Responsive</a>
@@ -116,7 +116,7 @@
             <div class="accordion-body">
               <ul class="menu menu-nav">
                 <li class="menu-item">
-                  <a href="components.html#accordions">Accordions</a>
+                  <a href="components.html">Accordions</a>
                 </li>
                 <li class="menu-item">
                   <a href="components.html#autocomplete">Autocomplete</a>
@@ -186,7 +186,7 @@
             <div class="accordion-body">
               <ul class="menu menu-nav">
                 <li class="menu-item">
-                  <a href="utilities.html#colors">Colors</a>
+                  <a href="utilities.html">Colors</a>
                 </li>
                 <li class="menu-item">
                   <a href="utilities.html#cursors">Cursors</a>
@@ -220,7 +220,7 @@
             <div class="accordion-body">
               <ul class="menu menu-nav">
                 <li class="menu-item">
-                  <a href="experimentals.html#calendars">Calendars</a>
+                  <a href="experimentals.html">Calendars</a>
                 </li>
                 <li class="menu-item">
                   <a href="experimentals.html#carousels">Carousels</a>
@@ -542,6 +542,20 @@
 
       </div>
 
+      <div class="container">
+        <div class="docs-ad docs-ad-sidebar">
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- github-vertical-sm -->
+          <ins class="adsbygoogle"
+              style="display:inline-block;width:120px;height:240px"
+              data-ad-client="ca-pub-2225124559530218"
+              data-ad-slot="5087273059"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+
       <div id="tables" class="container">
         <h3 class="s-title"><a href="#tables" class="anchor" aria-hidden="true">#</a>Tables</h3>
         <div class="docs-note">
@@ -602,6 +616,63 @@
 &lt;<span class="tag">/table</span>&gt;
 </code></pre>
 
+        <div class="docs-note">
+          <p>If you need the tables with horizontal scroll, add the <code>table-scroll</code> class to the &lt;table&gt; element. </p>
+        </div>
+
+        <table class="table table-scroll">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Genre</th>
+              <th>Director</th>
+              <th>Rating</th>
+              <th>Duration</th>
+              <th>Release date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>The Shawshank Redemption</td>
+              <td>Crime, Drama</td>
+              <td>Frank Darabont</td>
+              <td>R</td>
+              <td>2h 22min</td>
+              <td>14 October 1994</td>
+            </tr>
+            <tr>
+              <td>The Godfather</td>
+              <td>Crime, Drama</td>
+              <td>Francis Ford Coppola</td>
+              <td>R</td>
+              <td>2h 55min</td>
+              <td>24 March 1972</td>
+            </tr>
+            <tr>
+              <td>Schindler's List</td>
+              <td>Biography, Drama, History</td>
+              <td>Steven Spielberg</td>
+              <td>R</td>
+              <td>3h 15min</td>
+              <td>4 February 1994</td>
+            </tr>
+            <tr>
+              <td>Se7en</td>
+              <td>Crime, Drama, Mystery</td>
+              <td>David Fincher</td>
+              <td>R</td>
+              <td>2h 7min</td>
+              <td>22 September 1995</td>
+            </tr>
+          </tbody>
+        </table>
+
+<!-- tables -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">table</span> <span class="atn">class</span>=<span class="atv">&quot;table table-scroll&quot;</span>&gt;
+  <span class="com">&lt;!-- table content --&gt;</span>
+&lt;<span class="tag">/table</span>&gt;
+</code></pre>
+
       </div>
 
       <div id="buttons" class="container">
@@ -625,6 +696,22 @@
 <pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span>&gt;default button&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-primary&quot;</span>&gt;primary button&lt;<span class="tag">/button</span>&gt;
 &lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-link&quot;</span>&gt;link button&lt;<span class="tag">/button</span>&gt;
+</code></pre>
+
+        <h4 id="buttons-colors" class="s-subtitle">Button colors</h4>
+        <div class="columns">
+          <div class="column col-12">
+            <button class="btn btn-success">success button</button>
+            <button class="btn btn-error">error button</button>
+          </div>
+        </div>
+        <div class="docs-note">
+          <p>Add the <code>btn-success</code> or <code>btn-error</code> class for success (green) or error (red) button color. If you need more button colors, please use <a href="getting-started.html#variables-buttons">button mixins</a> to create your own button color variants. </p>
+        </div>
+
+<!-- buttons -->
+<pre class="code" data-lang="HTML"><code>&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-success&quot;</span>&gt;success button&lt;<span class="tag">/button</span>&gt;
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn btn-error&quot;</span>&gt;error button&lt;<span class="tag">/button</span>&gt;
 </code></pre>
 
         <h4 id="buttons-sizes" class="s-subtitle">Button sizes</h4>
@@ -694,9 +781,8 @@
         </div>
 
 <!-- buttons -->
-<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- buttons with disabled state --&gt;</span>
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn disabled&quot;</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;disabled button&lt;<span class="tag">/button</span>&gt;
-&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn&quot;</span> <span class="atn">disabled</span> <span class="atn">tabindex</span>=<span class="atv">&quot;-1&quot;</span>&gt;disabled button&lt;<span class="tag">/button</span>&gt;
+<pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- buttons with active state --&gt;</span>
+&lt;<span class="tag">button</span> <span class="atn">class</span>=<span class="atv">&quot;btn active&quot;</span>&gt;active button&lt;<span class="tag">/button</span>&gt;
 </code></pre>
           
         <div class="docs-note">
@@ -817,8 +903,8 @@
 
 <pre class="code" data-lang="HTML"><code><span class="com">&lt;!-- form textarea control --&gt;</span>
 &lt;<span class="tag">div</span> <span class="atn">class</span>=<span class="atv">&quot;form-group&quot;</span>&gt;
-&lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-3&quot;</span>&gt;Message&lt;<span class="tag">/label</span>&gt;
-&lt;<span class="tag">textarea</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-3&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Textarea&quot;</span> <span class="atn">rows</span>=<span class="atv">&quot;3&quot;</span>&gt;&lt;<span class="tag">/textarea</span>&gt;
+  &lt;<span class="tag">label</span> <span class="atn">class</span>=<span class="atv">&quot;form-label&quot;</span> <span class="atn">for</span>=<span class="atv">&quot;input-example-3&quot;</span>&gt;Message&lt;<span class="tag">/label</span>&gt;
+  &lt;<span class="tag">textarea</span> <span class="atn">class</span>=<span class="atv">&quot;form-input&quot;</span> <span class="atn">id</span>=<span class="atv">&quot;input-example-3&quot;</span> <span class="atn">placeholder</span>=<span class="atv">&quot;Textarea&quot;</span> <span class="atn">rows</span>=<span class="atv">&quot;3&quot;</span>&gt;&lt;<span class="tag">/textarea</span>&gt;
 &lt;<span class="tag">/div</span>&gt;
 </code></pre>
 
@@ -993,8 +1079,7 @@
                 </div>
               </div>
               <div class="form-group">
-                <div class="col-3"></div>
-                <div class="col-9">
+                <div class="col-9 col-ml-auto">
                   <label class="form-switch">
                     <input type="checkbox">
                     <i class="form-icon"></i> Send me emails with news and tips
@@ -1010,19 +1095,11 @@
                 </div>
               </div>
               <div class="form-group">
-                <div class="col-3"></div>
-                <div class="col-9">
+                <div class="col-9 col-ml-auto">
                   <label class="form-checkbox">
                     <input type="checkbox">
                     <i class="form-icon"></i> Remember me
                   </label>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-3"></div>
-                <div class="col-9">
-                  <button class="btn btn-primary" type="submit">Submit</button>
-                  <button class="btn btn-link" type="reset">Cancel</button>
                 </div>
               </div>
             </form>
@@ -1078,6 +1155,9 @@
               <option>Hipchat</option>
             </select>
           </div>
+        </div>
+        <div class="docs-note">
+          <p>You can add the <code>input-sm</code>/<code>input-lg</code> classes to the input-checkbox, input-radio and input-switch to have different sizes.</p>
         </div>
 
         <h4 id="forms-icons" class="s-subtitle">Form icons</h4>
@@ -1288,6 +1368,26 @@
         <div class="columns">
           <div class="column col-xs-12">
             <div class="input-group">
+              <label class="form-switch">
+                <input type="checkbox">
+                <i class="form-icon"></i>
+              </label>
+              <input type="text" class="form-input" placeholder="name">
+            </div>
+          </div>
+          <div class="column col-xs-12">
+            <div class="input-group">
+              <label class="form-checkbox">
+                <input type="checkbox">
+                <i class="form-icon"></i>
+              </label>
+              <input type="text" class="form-input" placeholder="name">
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column col-xs-12">
+            <div class="input-group">
               <input type="text" class="form-input input-lg" placeholder="username">
               <select class="form-select select-lg">
                 <option>Slack</option>
@@ -1304,6 +1404,7 @@
             </div>
           </div>
         </div>
+
         <div class="docs-note">
           <p>If you want to attach text and button along with an input, add the <code>input-group</code> class to the input container. And add the <code>input-group-addon</code> class to the text element and <code>input-group-btn</code> to the button element.</p>
         </div>
@@ -1899,7 +2000,7 @@
 
       <footer class="docs-footer">
         <p><a href="https://github.com/picturepan2/spectre" target="_blank">GitHub</a> | <a href="https://twitter.com/spectrecss" target="_blank">Twitter</a> | <a href="https://www.paypal.me/picturepan2" target="_blank">PayPal Donate</a> | Version <span class="version"></span></p>
-        <p>Designed and built with ♥ by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
+        <p>Designed and built with <span class="text-error">♥</span> by <a href="https://twitter.com/picturepan2" target="_blank">Yan Zhu</a>. Licensed under the <a href="https://github.com/picturepan2/spectre/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
       </footer>
 
     </div>

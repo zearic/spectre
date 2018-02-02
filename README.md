@@ -10,7 +10,7 @@ Spectre.css is a lightweight, responsive and modern CSS framework.
 - Flexbox-based, responsive and mobile-friendly layout
 - Elegantly designed and developed elements and components
 
-Spectre is a side project based on years of CSS development work on a large web service project. Spectre only includes modern base styles, responsive layout system, CSS components and utilities, and it can be modified for your project with SASS/SCSS compiler.
+Spectre is a side project based on years of CSS development work on a large web service project. Spectre only includes modern base styles, responsive layout system, CSS components and utilities, and it can be modified for your project with Sass/Scss compiler.
 
 Spectre.css is completely free to use. If you enjoy it, please consider [donating via Paypal](https://www.paypal.me/picturepan2) for the further development. ♥ 
 
@@ -107,5 +107,7 @@ Spectre uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make mos
 - Safari (LAST 4)
 - Opera (LAST 4)
 - Internet Explorer 10+
+
+Spectre supports Internet Explorer 10+, but some HTML5 and CSS3 features are not perfectly supported by Internet Explorer.
 
 Designed and built with ♥ by [Yan Zhu](https://twitter.com/picturepan2). Feel free to submit a pull request. Help is always appreciated.
